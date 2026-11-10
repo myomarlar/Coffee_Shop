@@ -1,0 +1,348 @@
+/** @format */
+
+.sec-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-cream);
+  padding-top: 27px;
+}
+
+.sec-hero-inner {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.5fr);
+  gap: 0;
+  margin: 0;
+  padding: 0 0 0 clamp(36px, 10.9vw, 168px);
+}
+
+.sec-hero-copy {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+
+.sec-hero-copy h1 {
+  max-width: 100%;
+  margin: 20px 0;
+  font-size: clamp(3rem, 5.55vw, 5rem);
+}
+
+.sec-lead {
+  max-width: 430px;
+}
+
+.sec-hero-actions {
+  display: flex;
+  align-items: start;
+  gap: 28px;
+  margin-top: 22px;
+}
+
+.sec-hero-image {
+  min-width: 0;
+}
+
+.sec-hero-image > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 976 / 495;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .sec-hero-inner {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    padding-left: clamp(30px, 7vw, 64px);
+  }
+
+  .sec-hero-copy h1 {
+    font-size: clamp(2.75rem, 6vw, 3.5rem);
+  }
+}
+
+@media (max-width: 700px) {
+  .sec-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sec-hero-copy h1 {
+    font-size: clamp(2.25rem, 10vw, 3.125rem);
+  }
+
+}
+
+.sec-categories {
+  background: var(--color-cream-deep);
+}
+
+.sec-categories-heading {
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.sec-categories-heading > p:first-of-type {
+  color: #313131;
+  font-family: var(--font-accent);
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+.sec-categories-heading h2 {
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+  font-size: 35px;
+}
+
+.sec-categories-heading h2::before,
+.sec-categories-heading h2::after {
+  display: inline-block;
+  width: 96px;
+  height: 1px;
+  margin: 0 20px;
+  vertical-align: middle;
+  background: var(--secondary-color);
+  content: "";
+}
+
+.sec-categories-heading p + p {
+  max-width: 850px;
+  margin: 18px auto 0;
+}
+
+@media (max-width: 700px) {
+  .sec-categories-heading h2 {
+    margin: 0 auto 20px;
+    font-family: var(--font-heading);
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 37px;
+  }
+
+  .sec-categories-heading h2::before,
+  .sec-categories-heading h2::after {
+    width: 36px;
+    margin: 0 10px;
+  }
+
+  .sec-categories-heading > p:first-of-type {
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    color: #000000;
+    font-size: 25px;
+    line-height: 37px;
+  }
+
+  .sec-categories-heading p + p {
+    width: 350px;
+    max-width: 100%;
+    margin: 18px auto 0;
+    color: #000000;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.sec-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.sec-category-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 205px;
+  border-radius: 5px;
+  background: var(--primary-color-dark);
+}
+
+.sec-category-card::after {
+  position: absolute;
+  inset: 30% 0 0;
+  background: linear-gradient(transparent, rgb(29 17 10 / 75%));
+  content: "";
+}
+
+.sec-category-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 205px;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.sec-category-card:hover img {
+  transform: scale(1.05);
+}
+
+.sec-category-card span {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 16px;
+  left: 20px;
+  transform: translateY(8px);
+  opacity: 0;
+  color: var(--color-paper);
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease;
+}
+
+.sec-category-card:hover span,
+.sec-category-card:focus-visible span {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.sec-story-inner {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 90px;
+}
+
+.sec-story {
+  background: var(--color-cream-deep);
+}
+
+.sec-story-alt {
+  background: var(--color-paper);
+}
+
+.sec-story-image {
+  position: relative;
+  max-width: 500px;
+}
+
+.sec-story-image > img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.sec-story-copy h2 {
+  margin: 14px 0 20px;
+}
+
+.sec-story-copy .sec-menu-title {
+  margin: 0 0 12px;
+  color: var(--secondary-color);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.sec-story-copy .sec-menu-list {
+  display: grid;
+  gap: 12px;
+  color: var(--color-text);
+  font-size: 0.91rem;
+  line-height: 1.5;
+}
+
+.sec-story-copy .sec-menu-list li {
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: max-content minmax(12px, 1fr) max-content;
+  gap: 4px;
+}
+
+.sec-story-copy .sec-menu-leader {
+  overflow: hidden;
+  border-bottom: 1px dotted currentColor;
+  transform: translateY(-3px);
+}
+
+.sec-story-copy .sec-menu-button {
+  display: flex;
+  width: fit-content;
+  min-height: 34px;
+  margin: 32px auto 0;
+  padding: 5px 16px;
+  font-size: 0.72rem;
+}
+
+.sec-ingredients {
+  overflow: hidden;
+}
+
+.sec-ingredient-swiper {
+  position: relative;
+  padding: 6px 46px 24px;
+}
+
+.sec-ingredient-card {
+  padding: 10px 10px 18px;
+  text-align: center;
+}
+
+.sec-ingredient-card img {
+  width: 100%;
+  max-width: 205px;
+  aspect-ratio: 1;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sec-ingredient-card h3 {
+  margin-bottom: 6px;
+  font-size: 1.15rem;
+}
+
+.sec-ingredient-card p {
+  font-size: 0.84rem;
+}
+
+.sec-swiper-controls {
+  position: absolute;
+  z-index: 2;
+  top: 120px;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.sec-swiper-controls button {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.sec-coffee-divider {
+  display: grid;
+  min-height: 58px;
+  place-items: center;
+  background: var(--primary-color);
+}
+
+.sec-coffee-divider img {
+  width: 68px;
+  height: 54px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  background: var(--color-cream-deep);
+  object-fit: contain;
+}
