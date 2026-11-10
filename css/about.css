@@ -52,8 +52,7 @@
 }
 
 .team {
-  padding: 76px 0 80px;
-  background: #fff;
+  background: #f9f2ed;
 }
 
 .team__inner {
@@ -78,17 +77,18 @@
 .section-heading h2 {
   margin: 0;
   color: #c9784d;
-  font-size: 34px;
-  font-weight: 750;
-  line-height: 1.25;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 45px;
   white-space: nowrap;
 }
 
 .team__intro {
-  margin: 23px auto 0;
-  color: #292625;
+  margin-top: 20px;
+  color: #000000;
   font-size: 20px;
-  line-height: 1.75;
+  line-height: 35px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -113,34 +113,27 @@
 }
 
 .team-card__caption {
-  min-height: 90px;
-  padding: 10px 8px 8px;
+  padding: 10px 0;
 }
 
 .team-card__caption h2 {
-  color: #171514;
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 35px;
 }
 
 .team-card__caption p {
-  margin-top: 4px;
-  color: #282321;
+  color: #000000;
   font-size: 20px;
-  line-height: 1.4;
+  font-weight: 400;
+  line-height: 35px;
 }
 
 .history {
   min-height: 1138px;
-  padding: 80px 0 70px;
   background: #fffdfb url('../img/about/img_coffee_bg.png') center center/cover
     no-repeat;
-}
-
-.history__inner {
-  width: min(100% - 48px, 1200px);
-  margin-inline: auto;
 }
 
 .section-heading--history h2 {
@@ -150,8 +143,8 @@
 .timeline {
   position: relative;
   width: 100%;
-  height: 860px;
-  margin: 84px auto 0;
+  height: 853px;
+  margin: 80px auto 0;
 }
 
 .timeline::before {
@@ -167,7 +160,8 @@
 
 .timeline-item {
   position: absolute;
-  width: calc(50% - 62px);
+  width: 50%;
+  padding: 10px 40px;
 }
 
 .timeline-item--left {
@@ -178,8 +172,8 @@
   right: 0;
 }
 
-.timeline-item--2022 {
-  top: 8px;
+.timeline-item--2022 h3 {
+  margin-bottom: 10px;
 }
 
 .timeline-item--2023 {
@@ -195,24 +189,25 @@
 }
 
 .timeline-item h3 {
-  margin-bottom: 8px;
-  color: #272525;
-  font-size: 38px;
+  color: #313131;
+  font-size: 35px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 45px;
 }
 
 .timeline-item h4 {
-  margin-bottom: 12px;
-  color: #c9784d;
+  margin-bottom: 10px;
+  color: #c67c4e;
   font-size: 20px;
   font-weight: 700;
+  line-height: 35px;
 }
 
 .timeline-item p {
-  color: #514a46;
+  color: #313131;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 25px;
+  font-weight: 400;
 }
 
 .footer {

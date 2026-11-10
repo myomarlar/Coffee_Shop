@@ -304,6 +304,12 @@
     font-size: 15px;
     line-height: 23px;
   }
+  .menu-section {
+    padding: 40px 0;
+  }
+  .menu-section > .sec-wrap {
+    padding: 0;
+  }
 }
 
 .menu-section {
@@ -446,9 +452,6 @@
 }
 
 @media (max-width: 900px) {
-  .menu-section {
-    padding: 40px 0;
-  }
   .menu-section__subtitle {
     font-size: 30px;
     line-height: 38px;
@@ -513,8 +516,8 @@
     line-height: 36px;
     margin-bottom: 36px;
   }
-  .menu-dashed-box {
-    padding: 24px 16px 20px;
+  .menu-section > .sec-wrap {
+    padding: 0;
   }
   .menu-panel {
     grid-template-columns: 1fr;
@@ -558,6 +561,10 @@
   .menu-panel-wrap {
     margin-bottom: 48px;
   }
+  .special-card__img--hero {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .bella-crema {
@@ -587,7 +594,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  min-height: 340px;
+  max-height: 340px;
   margin-left: 0;
   border: 1px solid #8f5431;
   border-radius: 20px;
@@ -663,11 +670,10 @@
 
 @media (max-width: 900px) {
   .bella-crema__box_card {
-    min-height: 340px;
+    max-height: 340px;
   }
   .bella-crema__img-col {
-    left: 24px;
-    top: -36px;
+    left: 10px;
   }
   .bella-crema__img {
     width: 200px;
@@ -818,6 +824,10 @@
   }
   .footer__brand {
     align-items: center;
+  }
+  .special-card__img--hero {
+    width: 200px;
+    height: 200px;
   }
 }
 
