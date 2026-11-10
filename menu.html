@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our menu — handcrafted drinks, desserts, pizza & fast food made with love."
+    />
+    <meta name="theme-color" content="#fffaf5" />
+    <title>Menu | Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+
+  <body>
+    <header class="sec-header">
+      <nav class="sec-navbar" aria-label="Main navigation">
+        <a
+          class="sec-brand sec-brand-logo-only"
+          href="index.html"
+          aria-label="Coffee Shop home"
+          ><img src="./img/logo.png" alt="Coffee Shop"
+        /></a>
+        <button
+          class="sec-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sec-visually-hidden">Toggle navigation</span><span></span
+          ><span></span><span></span>
+        </button>
+        <div class="sec-navbar-actions">
+          <ul class="sec-nav-links" id="primary-navigation">
+            <li>
+              <a class="sec-current" href="index.html" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="sec-button sec-nav-order" href="menu.html">Order now!</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="today-special" aria-labelledby="special-heading">
+        <div class="special-wrap">
+          <div class="section-label">
+            <span class="section-label__line"></span>
+            <span class="section-label__text" id="special-heading"
+              >today special</span
+            >
+            <span class="section-label__line"></span>
+          </div>
+
+          <div class="special-grid">
+            <div class="special-card special-card--left">
+              <div
+                class="special-card__img-wrap special-card__img-wrap--circle"
+              >
+                <img
+                  src="./img/menu/img_menu_pizza.png"
+                  alt="BBQ Chicken Pizza"
+                  class="special-card__img"
+                />
+              </div>
+              <h3 class="special-card__name">BBQ Chicken Pizza</h3>
+              <p class="special-card__desc">
+                A delicious pizza topped with tender grilled chicken, smoky BBQ
+                sauce, melted mozzarella cheese, and fresh cilantro on a crispy
+                baked crust. Sweet and savory flavors combine to create a rich
+                and satisfying taste in every bite.
+              </p>
+            </div>
+
+            <div class="special-card special-card--center">
+              <h3 class="special-card__name special-card__name--center">
+                Chef's Special Fried Rice
+              </h3>
+              <p class="special-card__desc special-card__desc--center">
+                A flavorful fried rice cooked with fragrant rice, mixed
+                vegetables, tender chicken, shrimp, and aromatic seasoning.
+                Stir-fried in hot wok and topped with fresh herbs for a
+                delicious and satisfying dish prepared in the chef's special
+                style.
+              </p>
+              <div class="special-card__img-wrap special-card__img-wrap--hero">
+                <img
+                  src="./img/menu/img_menu_fried_rice.png"
+                  alt="Chef's Special Fried Rice"
+                  class="special-card__img special-card__img--hero"
+                />
+              </div>
+            </div>
+
+            <div class="special-card special-card--right">
+              <div
+                class="special-card__img-wrap special-card__img-wrap--circle"
+              >
+                <img
+                  src="./img/menu/img_menu_humburger.png"
+                  alt="Golden Crispy Chicken Burger"
+                  class="special-card__img"
+                />
+              </div>
+              <h3 class="special-card__name special-card__name--right">
+                Golden Crispy Chicken Burger
+              </h3>
+              <p class="special-card__desc special-card__desc--right">
+                A juicy, golden-fried chicken fillet served in a soft toasted
+                bun with fresh lettuce, sliced tomato, and creamy mayonnaise.
+                Crispy on the outside and tender inside, this burger delivers a
+                delicious crunch and rich flavor in every bite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" aria-labelledby="menu-heading">
+        <div class="sec-wrap">
+          <div class="menu-dashed-box">
+            <!-- Section label -->
+            <div class="section-label-menu">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" id="menu-heading">menu</span>
+              <span class="section-label__line"></span>
+            </div>
+
+            <h2 class="menu-section__subtitle">TASTE OUR FLAVOUR</h2>
+
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+              <button
+                class="menu-tab menu-tab--active"
+                role="tab"
+                aria-selected="true"
+                aria-controls="tab-drinks"
+                id="btn-drinks"
+                data-tab="drinks"
+              >
+                Drinks
+              </button>
+              <button
+                class="menu-tab"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tab-desserts"
+                id="btn-desserts"
+                data-tab="desserts"
+              >
+                Desserts
+              </button>
+              <button
+                class="menu-tab"
+                role="tab"
+                aria-selected="false"
+                aria-controls="tab-fastfood"
+                id="btn-fastfood"
+                data-tab="fastfood"
+              >
+                Pizza &amp; Fast Food
+              </button>
+            </div>
+
+            <div class="menu-panel-wrap">
+              <div
+                class="menu-panel menu-panel--active"
+                id="tab-drinks"
+                role="tabpanel"
+                aria-labelledby="btn-drinks"
+              >
+                <h3 class="menu-panel__title">Drinks</h3>
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/menu/img_menu_coffee.png"
+                    alt="Coffee drinks"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Matcha Latte</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Hot Americano</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Avogado Yogurt</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">10000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Hot Cappuccino</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Jasmine Green Tea</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">8000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Fresh Iced Lemon Tea</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Strawberry Smoothie</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Bang Bang Chocolate</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">6100 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Mango Tea with QQ Jelly</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Oreo Brown Sugar Milk Tea</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">10800 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Iced Black Diamond Milk Tea</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">6600 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Regular Size Thai Peal Milk Tea</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9500 MMK</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="tab-desserts"
+                role="tabpanel"
+                aria-labelledby="btn-desserts"
+                hidden
+              >
+                <h3 class="menu-panel__title">Desserts</h3>
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/home/img_cake.png"
+                    alt="Desserts"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Chocolate Lava Cake</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">8500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Strawberry Cheesecake</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Vanilla Ice Cream</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Blueberry Muffin</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">4500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Caramel Pudding</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Tiramisu</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">10000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Honey Toast</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7500 MMK</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="tab-fastfood"
+                role="tabpanel"
+                aria-labelledby="btn-fastfood"
+                hidden
+              >
+                <h3 class="menu-panel__title">Pizza &amp; Fast Food</h3>
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/menu/img_menu_pizza.png"
+                    alt="Pizza and Fast Food"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">BBQ Chicken Pizza</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">18000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Cheese Margherita Pizza</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">15000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Golden Crispy Chicken Burger</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">12000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Chef's Special Fried Rice</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Classic French Fries</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">4000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Loaded Nachos</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Crispy Chicken Wings</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">11000 MMK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section__cta">
+              <a href="#" class="sec-button">Order Now...</a>
+            </div>
+          </div>
+          <!-- /.menu-dashed-box -->
+        </div>
+      </section>
+
+      <section class="bella-crema" aria-label="BellaCrema Espresso">
+        <div class="bella-crema_card_container">
+          <div class="bella-crema__box">
+            <div class="bella-crema__box_card">
+              <div class="bella-crema__img-col">
+                <img
+                  src="./img/menu/img_menu_bella_crema.png"
+                  alt="BellaCrema Espresso coffee bag"
+                  class="bella-crema__img"
+                />
+              </div>
+              <div class="bella-crema__card">
+                <div class="bella-crema__content">
+                  <p class="bella-crema__brand">BellaCrema</p>
+                  <p class="bella-crema__sub">Expresso</p>
+                  <p class="bella-crema__desc">
+                    Savor the rich aroma and bold flavor of our locally roasted
+                    coffee. Support local farmers while enjoying every perfect
+                    cup.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="sec-footer sec-footer-home">
+      <div class="sec-footer-home-inner sec-mobile-wrap">
+        <div class="sec-footer-home-brand">
+          <a href="index.html" aria-label="Coffee Shop home"
+            ><img src="./img/logo.png" alt="Coffee Shop"
+          /></a>
+          <p>TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="sec-footer-home-main">
+          <nav class="sec-footer-home-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="sec-footer-home-signup-row">
+            <form
+              class="sec-footer-home-form"
+              action="mailto:hello@coffeecorner.example"
+              method="post"
+              enctype="text/plain"
+            >
+              <label class="sec-visually-hidden" for="footer-email"></label>
+              <input
+                id="footer-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email here"
+                required
+              />
+              <button class="sec-footer-sent-button" type="submit">Send</button>
+            </form>
+            <div class="sec-footer-home-social" aria-label="Social media">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><img src="./img/home/ico_facebook.png" alt=""
+              /></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><img src="./img/home/ico_instagram.png" alt=""
+              /></a>
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><img src="./img/home/ico_twitter.png" alt=""
+              /></a>
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                ><img src="./img/home/ico_tiktok.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-footer-home-copyright">
+        Copyright@2026 All Rights Reserved
+      </div>
+    </footer>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
