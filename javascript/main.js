@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navigationToggle = document.querySelector(".sec-nav-toggle");
     const navigationLinks = document.querySelector(".sec-nav-links");
-    const navigationBar = navigationToggle ? .closest(".sec-navbar");
+    const navigationBar = navigationToggle?.closest(".sec-navbar");
 
     if (navigationToggle && navigationLinks && navigationBar) {
         const closeNavigation = () => {

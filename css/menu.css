@@ -530,9 +530,11 @@
     margin-inline: auto;
   }
   .menu-tabs {
-    overflow-x: auto;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
     gap: 24px;
+    row-gap: 8px;
     margin-bottom: 28px;
   }
   .menu-tab {

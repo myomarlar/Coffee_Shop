@@ -91,7 +91,7 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 270px);
+  grid-template-columns: repeat(4, minmax(0, 270px));
   justify-content: center;
   gap: 40px;
   margin-top: 80px;
@@ -104,8 +104,8 @@
 }
 
 .team-card > img {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 

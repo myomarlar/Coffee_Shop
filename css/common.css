@@ -22,7 +22,6 @@
 
 html {
   color-scheme: light;
-  min-width: 320px;
   background: var(--color-paper);
   color: var(--color-text);
   font-family: var(--font-heading);
@@ -506,9 +505,10 @@ p {
   }
 
   .sec-footer-home-nav {
+    flex-wrap: wrap;
     min-height: auto;
     justify-content: center;
-    gap: 40px;
+    gap: 8px 20px;
     padding-bottom: 20px;
   }
 
@@ -680,12 +680,13 @@ p {
   .sec-footer-home-inner {
     width: 100%;
     margin: 0;
-    padding: 80px 80px 80px;
-    gap: 80px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr);
+    padding: 80px clamp(24px, 6.25vw, 80px);
+    gap: clamp(32px, 6.25vw, 80px);
   }
 
   .sec-footer-home-brand a {
-    margin-inline: 50px;
+    margin-inline: 0;
   }
 
   .sec-footer-home-brand p {
