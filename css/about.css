@@ -357,16 +357,6 @@
 }
 
 @media (max-width: 600px) {
-  .sec-navbar {
-    min-height: 56px;
-    padding: 8px 16px;
-  }
-  .sec-nav-toggle {
-    top: 0;
-    right: 8px;
-    width: 48px;
-    height: 48px;
-  }
   .team {
     background: #f9f2ed;
   }
