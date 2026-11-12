@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/menu.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/home.css" />
   </head>
@@ -131,6 +134,244 @@
               /><span>Ice cream</span></a
             >
           </div>
+        </div>
+      </section>
+      <section class="menu-section" aria-labelledby="menu-heading">
+        <div class="sec-wrap">
+          <div class="menu-dashed-box">
+            <!-- Section label -->
+            <div class="section-menu-ttl">
+              <span class="section-label__line"></span>
+              <span class="section-label__text" id="menu-heading">menu</span>
+              <span class="section-label__line"></span>
+            </div>
+
+            <h2 class="menu-section__subtitle">TASTE OUR FLAVOUR</h2>
+
+            <div class="menu-panel-wrap home-menu-panel-wrap">
+              <div
+                class="menu-panel menu-panel--active"
+                id="tab-drinks"
+                role="tabpanel"
+                aria-labelledby="btn-drinks"
+              >
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/menu/img_menu_coffee.png"
+                    alt="Coffee drinks"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name menu-line">Drinks</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Matcha Latte</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7500 MMK</span>
+                  </div>
+
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Jasmine Green Tea</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">8000 MMK</span>
+                  </div>
+
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Bang Bang Chocolate</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">6100 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Mango Tea with QQ Jelly</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Iced Black Diamond Milk Tea</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Regular Size Thai Peal Milk Tea</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9500 MMK</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="tab-desserts"
+                role="tabpanel"
+                aria-labelledby="btn-desserts"
+                hidden
+              >
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/home/img_cake.png"
+                    alt="Desserts"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Chocolate Lava Cake</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">8500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Strawberry Cheesecake</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Vanilla Ice Cream</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Blueberry Muffin</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">4500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Caramel Pudding</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Tiramisu</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">10000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Honey Toast</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7500 MMK</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="menu-panel"
+                id="tab-fastfood"
+                role="tabpanel"
+                aria-labelledby="btn-fastfood"
+                hidden
+              >
+                <h3 class="menu-panel__title">Pizza &amp; Fast Food</h3>
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/menu/img_menu_pizza.png"
+                    alt="Pizza and Fast Food"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">BBQ Chicken Pizza</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">18000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Cheese Margherita Pizza</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">15000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Golden Crispy Chicken Burger</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">12000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >Chef's Special Fried Rice</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Classic French Fries</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">4000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Loaded Nachos</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">7000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Crispy Chicken Wings</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">11000 MMK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-panel-wrap home-menu-panel-wrap">
+              <div class="menu-panel menu-panel--active menu-panel--reverse">
+                <div class="menu-panel__img-col">
+                  <img
+                    src="./img/home/img_minicake.png"
+                    alt="A slice of cake"
+                    class="menu-panel__photo"
+                  />
+                </div>
+                <div class="menu-list">
+                  <div class="menu-list__item">
+                    <span class="menu-list__name menu-line">Desserts</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Croissant</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">4500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Chiffon Cake</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">5500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Marble Cookie</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">6500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Chocolate Swiss Roll</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">9000 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name">Blueberry Cake Slice</span>
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">3500 MMK</span>
+                  </div>
+                  <div class="menu-list__item">
+                    <span class="menu-list__name"
+                      >American Cheese Cake Slice</span
+                    >
+                    <span class="menu-list__dots" aria-hidden="true"></span>
+                    <span class="menu-list__price">8000 MMK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-section__cta">
+              <a href="./menu.html" class="sec-button">See More...</a>
+            </div>
+          </div>
+          <!-- /.menu-dashed-box -->
         </div>
       </section>
     </main>

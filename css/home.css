@@ -5,6 +5,7 @@
   overflow: hidden;
   background: var(--color-cream);
   padding-top: 27px;
+  padding-bottom: 40px;
 }
 
 .sec-hero-inner {
@@ -51,6 +52,56 @@
   object-fit: cover;
 }
 
+.section-menu-ttl {
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+  font-size: 35px;
+  text-align: center;
+}
+
+.section-menu-ttl::before,
+.section-menu-ttl::after {
+  display: inline-block;
+  width: clamp(60px, 15vw, 100px);
+  height: 2px;
+  margin: 0 20px;
+  vertical-align: middle;
+  background: var(--secondary-color);
+  content: "";
+}
+
+.menu-line {
+  color: #c67c4e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-line::after {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  margin: 0 20px;
+  vertical-align: middle;
+  background: var(--secondary-color);
+  content: "";
+}
+
+@media (min-width: 769px) {
+  .home-menu-panel-wrap .menu-panel {
+    align-items: stretch;
+  }
+
+  .home-menu-panel-wrap .menu-panel__img-col {
+    display: flex;
+    max-height: none;
+  }
+
+  .home-menu-panel-wrap .menu-panel__photo {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .sec-hero-inner {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -62,16 +113,64 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (min-width: 701px) {
+  .sec-hero {
+    overflow: visible;
+  }
+
   .sec-hero-inner {
+    align-items: stretch;
+  }
+
+  .sec-hero-copy {
+    align-self: center;
+  }
+
+  .sec-hero-image {
+    display: flex;
+  }
+
+  .sec-hero-image > img {
+    height: calc(100% + 40px);
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .sec-hero {
+    overflow: visible;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .sec-hero-inner.sec-mobile-wrap {
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 0 20px 40px;
+  }
+
+  .sec-hero-image {
+    position: relative;
+    width: calc(100% + 40px);
+    aspect-ratio: 976 / 495;
+    margin-inline: -20px;
+  }
+
+  .sec-hero-image > img {
+    position: absolute;
+    inset: 0 0 -40px;
+    width: 100%;
+    height: calc(100% + 40px);
+    aspect-ratio: auto;
+    object-fit: cover;
   }
 
   .sec-hero-copy h1 {
+    margin-top: 0;
     font-size: clamp(2.25rem, 10vw, 3.125rem);
   }
-
 }
 
 .sec-categories {
@@ -100,8 +199,8 @@
 .sec-categories-heading h2::before,
 .sec-categories-heading h2::after {
   display: inline-block;
-  width: 96px;
-  height: 1px;
+  width: clamp(60px, 15vw, 100px);
+  height: 2px;
   margin: 0 20px;
   vertical-align: middle;
   background: var(--secondary-color);
@@ -109,7 +208,7 @@
 }
 
 .sec-categories-heading p + p {
-  max-width: 850px;
+  max-width: 858px;
   margin: 18px auto 0;
 }
 

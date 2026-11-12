@@ -15,8 +15,8 @@
   --color-paper: #fff;
   --color-text: #55483f;
   --color-muted: #83766d;
-  --font-heading: 'Sora', sans-serif;
-  --font-accent: 'Spectral SC', serif;
+  --font-heading: "Sora", sans-serif;
+  --font-accent: "Spectral SC", serif;
   --shadow-card: 0 14px 36px rgb(65 39 22 / 9%);
 }
 
@@ -168,7 +168,7 @@ p {
   transform: scaleX(0);
   transform-origin: left;
   background: var(--secondary-color);
-  content: '';
+  content: "";
   transition: transform 180ms ease;
 }
 
@@ -386,13 +386,13 @@ p {
       transform 180ms ease,
       opacity 180ms ease;
   }
-  .sec-nav-toggle[aria-expanded='true'] span:nth-of-type(2) {
+  .sec-nav-toggle[aria-expanded="true"] span:nth-of-type(2) {
     transform: translateY(7px) rotate(45deg);
   }
-  .sec-nav-toggle[aria-expanded='true'] span:nth-of-type(3) {
+  .sec-nav-toggle[aria-expanded="true"] span:nth-of-type(3) {
     opacity: 0;
   }
-  .sec-nav-toggle[aria-expanded='true'] span:nth-of-type(4) {
+  .sec-nav-toggle[aria-expanded="true"] span:nth-of-type(4) {
     transform: translateY(-7px) rotate(-45deg);
   }
   .sec-navbar.sec-menu-open > .sec-brand {
