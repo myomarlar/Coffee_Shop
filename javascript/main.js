@@ -35,19 +35,43 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof Swiper !== "undefined") {
         const ingredientSwiper = document.querySelector(".sec-ingredient-swiper");
         if (ingredientSwiper) {
-            new Swiper(ingredientSwiper, {
-                slidesPerView: 1.25,
+            const pagination = ingredientSwiper.querySelector(".sec-swiper-pagination");
+            const paginationSlidePositions = [3, 4, 0, 1, 2];
+            const swiper = new Swiper(ingredientSwiper, {
+                slidesPerView: 1,
                 spaceBetween: 14,
                 loop: true,
                 navigation: {
                     nextEl: ".sec-swiper-next",
                     prevEl: ".sec-swiper-prev",
                 },
+                pagination: {
+                    el: pagination,
+                    type: "custom",
+                    renderCustom(swiper) {
+                        const bulletCount = paginationSlidePositions.length;
+                        const activeIndex = (swiper.realIndex + 2) % bulletCount;
+
+                        return Array.from({ length: bulletCount }, (_, index) => {
+                            const slideIndex = paginationSlidePositions[index];
+                            const activeClass =
+                                index === activeIndex ? " swiper-pagination-bullet-active" : "";
+
+                            return `<button class="swiper-pagination-bullet${activeClass}" type="button" data-slide-index="${slideIndex}" aria-label="Go to slide ${index + 1}"${index === activeIndex ? ' aria-current="true"' : ""}></button>`;
+                        }).join("");
+                    },
+                },
                 breakpoints: {
-                    520: { slidesPerView: 2, spaceBetween: 18 },
+                    700: { slidesPerView: 2, spaceBetween: 18 },
                     760: { slidesPerView: 3, spaceBetween: 22 },
                     1024: { slidesPerView: 3, spaceBetween: 24 },
                 },
+            });
+
+            pagination.addEventListener("click", (event) => {
+                const bullet = event.target.closest(".swiper-pagination-bullet");
+                if (!bullet) return;
+                swiper.slideToLoop(Number(bullet.dataset.slideIndex));
             });
         }
     }
