@@ -1,0 +1,9 @@
+<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<use xlink:href="#stroke0_134_185" fill="#BF662F"/>
+<use xlink:href="#stroke0_134_185" fill="black" fill-opacity="0.2"/>
+<use xlink:href="#stroke0_134_185" fill="black" fill-opacity="0.2"/>
+<use xlink:href="#stroke0_134_185" fill="black" fill-opacity="0.2"/>
+<defs>
+<path id="stroke0_134_185" d="M40 0H5C2.25 0 0 2.25 0 5V40C0 42.7525 2.25 45 5 45H22.5V27.5H17.5V21.3125H22.5V16.1875C22.5 10.7775 25.53 6.9775 31.915 6.9775L36.4225 6.9825V13.495H33.43C30.945 13.495 30 15.36 30 17.09V21.315H36.42L35 27.5H30V45H40C42.75 45 45 42.7525 45 40V5C45 2.25 42.75 0 40 0Z"/>
+</defs>
+</svg>

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A cozy neighborhood coffee shop serving handcrafted coffee, fresh pastries, and good moments every day."
+    />
+    <meta name="theme-color" content="#fffaf5" />
+    <title>Coffee Shop | Fresh coffee, made with love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="sec-header">
+      <nav class="sec-navbar" aria-label="Main navigation">
+        <a
+          class="sec-brand sec-brand-logo-only"
+          href="index.html"
+          aria-label="Coffee Shop home"
+          ><img src="./img/logo.png" alt="Coffee Shop"
+        /></a>
+        <button
+          class="sec-nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sec-visually-hidden">Toggle navigation</span><span></span
+          ><span></span><span></span>
+        </button>
+        <div class="sec-navbar-actions">
+          <ul class="sec-nav-links" id="primary-navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a class="sec-current" href="contact.html" aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <a class="sec-button sec-nav-order" href="menu.html">Order now!</a>
+        </div>
+      </nav>
+      
+    </header>
+    <main>
+        <!-- top sec -->
+      <section class="sec-wrap">
+        <div class="sec-title-wrap">
+          <span class="line"></span>
+          <h2 class="sec-title">get in touch</h2>
+          <span class="line"></span>
+        </div>
+        <p class="desc-text add-text">
+          We’d love to hear from you! Whether you have a question, feedback, or
+          want to learn more about our menu and services, feel free to reach out
+          to us. Our team is always happy to help and make your experience even
+          better. Visit our coffee shop, give us a call, or send us a message—we
+          look forward to welcoming you soon.
+        </p>
+        <div class="d-flex">
+          <a href="#contact-wrap" class="sec-button btn-position"
+            >Send Message Now</a
+          >
+        </div>
+        <div class="cont-addess">
+          <div class="add-list-wrap d-flex item">
+            <div class="add-list">
+              <div class="list">
+                <h5>Location</h5>
+                <p>No.123, Barista Lane, Yangon, Myanmar</p>
+              </div>
+              <div class="list">
+                <h5>Phone</h5>
+                <p>+ 959 450 606 129</p>
+              </div>
+              <div class="list">
+                <h5>Hours</h5>
+                <p>Open Daily : 8am - 9pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="add-location d-flex">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.042866567559!2d96.16908147601188!3d16.774542784011896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ed001207eb45%3A0xfe164edb6375fe9f!2sBIB%20Co.%2C%20Ltd.!5e0!3m2!1sen!2smm!4v1793611289736!5m2!1sen!2smm"
+                width="399"
+                height="448"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner wraper -->
+      <div class="banner-wrap">
+        <div class="banner-content">
+          <h4 class="text left-text item">Our Community</h4>
+          <img
+            class="banner-img item"
+            src="img/contact/img_contact_tea_upper_view.png"
+            alt="lovely cappuccino..."
+            width="228"
+            height="240"
+          />
+          <h4 class="text right-text item">Your Coffee</h4>
+        </div>
+      </div>
+      <!-- contact mail sec -->
+      <section class="sec-wrap" id="contact-wrap">
+        <div class="sec-title-wrap">
+          <span class="line"></span>
+          <h2 class="sec-title wrap-title">send us a message </h2>
+          <span class="line"></span>
+        </div>
+        <p class="desc-text con-text">
+          Your feedback is important to us. Please do not hesitate to contact us
+          with any questions or comments regarding your visit. We will endeavor
+          to respond to your message as promptly as possible.
+        </p>
+        <form class="input-wrap">
+          <div class="inp-flex">
+            <input
+              class="inp-design item"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              value=""
+            />
+            <input
+              class="inp-design item"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              value=""
+            />
+          </div>
+          <input
+            class="inp-design mt40 sm-mt20"
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+            value=""
+          />
+          <textarea
+            class="inp-design message-text mt40 sm-mt20"
+            name="message"
+            id="message"
+            placeholder="Message"
+            value=""
+          ></textarea>
+          <div class="d-flex form-btn-fix">
+            <button
+              class="sec-button btn-position"
+              type="submit"
+              onclick="sendMessage()"
+            >
+              submit Message
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- link group sec -->
+      <section class="con-link-sec">
+        <h4 class="con-list-title">STAY CONNECTED</h4>
+        <div class="connect-link-gp">
+          <div class="conn-link-wrap">
+            <div class="d-flex">
+              <img
+                class="item connt-link-icon"
+                src="img/contact/facebook.svg"
+                alt="facebook icon..."
+                width="45"
+                height="45"
+              />
+            </div>
+            <a
+              class="conn-link face-link"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@theCoffeeShopYangon</a
+            >
+          </div>
+          <div class="conn-link-wrap">
+            <div class="d-flex">
+              <img
+                class="item connt-link-icon"
+                src="img/contact/instragram.svg"
+                alt="instragram icon..."
+                width="45"
+                height="45"
+              />
+            </div>
+            <a
+              class="conn-link inst-link"
+              href="https://www.instergram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@theCoffeeShopYangon</a
+            >
+          </div>
+          <div class="conn-link-wrap">
+            <div class="d-flex">
+              <img
+                class="item connt-link-icon"
+                src="img/contact/twitter.svg"
+                alt="twitter icon..."
+                width="45"
+                height="45"
+              />
+            </div>
+            <a
+              class="conn-link twit-link"
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@theCoffeeShopYangon</a
+            >
+          </div>
+          <div class="conn-link-wrap">
+            <div class="d-flex">
+              <img
+                class="item connt-link-icon"
+                src="img/contact/tiktok.svg"
+                alt="tiktok icon..."
+                width="45"
+                height="45"
+              />
+            </div>
+            <a
+              class="conn-link tik-link"
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@theCoffeeShopYangon</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="sec-footer sec-footer-home">
+      <div class="sec-footer-home-inner sec-mobile-wrap">
+        <div class="sec-footer-home-brand">
+          <a href="index.html" aria-label="Coffee Shop home"
+            ><img src="./img/logo.png" alt="Coffee Shop"
+          /></a>
+          <p>TASTE OUR FLAVOUR</p>
+        </div>
+        <div class="sec-footer-home-main">
+          <nav class="sec-footer-home-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="sec-footer-home-signup-row">
+            <form
+              class="sec-footer-home-form"
+              action="mailto:hello@coffeecorner.example"
+              method="post"
+              enctype="text/plain"
+            >
+              <label class="sec-visually-hidden" for="footer-email"></label>
+              <input
+                id="footer-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email here"
+                required
+              />
+              <button class="sec-footer-sent-button" type="submit">Send</button>
+            </form>
+            <div class="sec-footer-home-social" aria-label="Social media">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><img src="./img/home/ico_facebook.png" alt=""
+              /></a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><img src="./img/home/ico_instagram.png" alt=""
+              /></a>
+              <a
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                ><img src="./img/home/ico_twitter.png" alt=""
+              /></a>
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                ><img src="./img/home/ico_tiktok.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-footer-home-copyright">
+        Copyright@2026 All Rights Reserved
+      </div>
+    </footer>
+    <script src="./javascript/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"
+    ></script>
+    <script src="./javascript/contact.js"></script>
+  </body>
+</html>
