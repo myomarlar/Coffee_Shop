@@ -255,7 +255,8 @@ form .message-text {
 
 @media (max-width: 550px) {
   .sec-wrap {
-    min-width: 390px;
+    min-width: (100%-40px,390px);
+    margin-inline: auto;
     padding: 40px 0px 30px 0px;
   }
   .line {
@@ -367,15 +368,15 @@ form .message-text {
   }
 
   .text {
-    color: var(--color-paper);
     font-size: 25px;
     font-weight: 400;
     z-index: 2;
     position: absolute;
   }
-
+  .desc-text{
+    text-align: start;
+  }
   .left-text {
-    min-width: 233px;
     text-align: start;
     top: 20px;
     left: 20px;
@@ -383,7 +384,6 @@ form .message-text {
   }
 
   .right-text {
-    min-width: 185px;
     top: 55px;
     left: 20px;
     padding: 0;
@@ -395,5 +395,57 @@ form .message-text {
     right: 20px;
     bottom: 20px;
     z-index: 3;
+  }
+}
+@media (max-width: 360px) {
+  
+  .sec-wrap{
+    max-width: (100%-30px,190px);
+  }
+  .add-location {
+    max-width: 160px;
+    max-height: 208px;
+  }
+  .add-location iframe {
+    max-width: 140px;
+    max-height: 168px;
+  }
+  .cont-addess{
+    gap: 10px;
+  }
+
+  .text{
+    font-size: 20px;
+  }
+
+  .con-list-title{
+    font-size: 25px;
+  }
+  .conn-link{
+    font-size: 14px;
+  }
+
+  .con-link-sec{
+    max-width: (100%40px,160px);
+  }
+  .list h5 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 2px;
+  }
+  .add-list p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .add-list .list + .list {
+    margin-top: 15px;
+  }
+  .sec-button{
+    padding-block: 20px;
+  }
+  .banner-img {
+    right: 10px;
+    bottom: 10px;
   }
 }
