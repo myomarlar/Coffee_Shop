@@ -255,8 +255,7 @@ form .message-text {
 
 @media (max-width: 550px) {
   .sec-wrap {
-    min-width: (100%-40px,390px);
-    margin-inline: auto;
+    width: min(100% - 40px, 390px);
     padding: 40px 0px 30px 0px;
   }
   .line {
