@@ -388,8 +388,7 @@
 }
 
 .menu-panel__photo {
-  width: 300px;
-  height: 330px;
+  width: 100%;
   object-fit: cover;
   border: 1px solid var(--secondary-color);
   padding: 20px;
@@ -619,7 +618,7 @@
 .bella-crema__img-col {
   position: absolute;
   left: 40px;
-  top: -80px;
+  top: -57px;
   z-index: 2;
   padding: 0;
   flex-shrink: 0;
@@ -627,8 +626,8 @@
 
 .bella-crema__img {
   display: block;
-  width: 260px;
-  height: 340px;
+  width: 317px;
+  height: 317px;
   object-fit: contain;
 }
 
