@@ -66,7 +66,7 @@
   max-width: 399px;
   max-height: 488px;
   border: 1px solid var(--secondary-color);
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 /* .add-location iframe{
   max-width: 310px;
@@ -267,6 +267,7 @@ form .message-text {
     line-height: 37px;
   }
   .desc-text {
+    /* text-align: c; */
     font-size: 14px;
     line-height: 21px;
   }
@@ -299,7 +300,7 @@ form .message-text {
   .add-list-wrap {
     justify-content: start;
     align-items: center;
-    padding: 7px 20px;
+    padding: 7px;
   }
   .list h5 {
     font-size: 25px;
@@ -317,12 +318,9 @@ form .message-text {
   .wrap-title {
     max-width: 142px;
   }
-
+  
   .con-text {
     margin-bottom: 30px;
-  }
-  .input-wrap {
-    padding: 20px;
   }
   .inp-flex {
     flex-direction: column;
@@ -334,17 +332,22 @@ form .message-text {
   .form-btn-fix {
     margin: 30px 0px 0px 0px;
   }
+  .con-link-sec{
+    max-width: auto;
+    padding: 15px 10px;
+  }
   .con-list-title {
     font-size: 35px;
     line-height: 45px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     padding: 10px 20px;
   }
   .connect-link-gp {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    margin-bottom: 40px;
   }
   .conn-link-wrap + .conn-link-wrap {
     margin-top: 20px;
@@ -372,9 +375,6 @@ form .message-text {
     font-weight: 400;
     z-index: 2;
     position: absolute;
-  }
-  .desc-text{
-    text-align: start;
   }
   .left-text {
     text-align: start;
@@ -409,6 +409,9 @@ form .message-text {
   .add-location iframe {
     max-width: 140px;
     max-height: 168px;
+  }
+  .desc-text{
+    text-align: start;
   }
   .cont-addess{
     gap: 10px;
